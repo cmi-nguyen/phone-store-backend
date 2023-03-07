@@ -24,7 +24,7 @@ public class UserController {
         return userService.fetchUserList();
     }
     
-    // Read user by id
+    // Read user by id.
 
     @GetMapping("/user/{id}")
     public Optional<User> getUserByID( @PathVariable("id") int id){

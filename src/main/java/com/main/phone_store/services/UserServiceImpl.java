@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService{
     public User saveUser(User user) {
         return userRepository.save(user);
     }
-    // Read user list
+    // Read user list.
     @Override
     public List<User> fetchUserList() {
         return userRepository.findAll();

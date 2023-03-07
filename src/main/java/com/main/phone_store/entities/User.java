@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 @Entity
 @Table(name="user")
 public class User {
+    // user entity
     @Id
     @Column(name="user_ID")
     private Integer userID;
