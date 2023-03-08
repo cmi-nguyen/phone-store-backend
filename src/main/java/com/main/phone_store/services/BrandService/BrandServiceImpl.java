@@ -1,9 +1,8 @@
-package com.main.phone_store.services;
+package com.main.phone_store.services.BrandService;
 
-import com.fasterxml.jackson.databind.annotation.JsonAppend;
 import com.main.phone_store.entities.Brand;
-import com.main.phone_store.entities.User;
 import com.main.phone_store.repositories.BrandRepository;
+import com.main.phone_store.services.BrandService.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +10,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 @Service
-public class BrandServiceImpl implements BrandService{
+public class BrandServiceImpl implements BrandService {
     @Autowired
     private BrandRepository brandRepository;
 
