@@ -1,7 +1,7 @@
 package com.main.phone_store.controllers;
 
 import com.main.phone_store.entities.Brand;
-import com.main.phone_store.services.BrandService;
+import com.main.phone_store.services.BrandService.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,7 +25,7 @@ public class BrandController {
     // Read  by id.
 
     @GetMapping("/brand/{id}")
-    public Optional<Brand> getUserByID(@PathVariable("id") int id){
+    public Optional<Brand> getBrandByID(@PathVariable("id") int id){
         return brandService.getBrandByID(id);
     }
 
