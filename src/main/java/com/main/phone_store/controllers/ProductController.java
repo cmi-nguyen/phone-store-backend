@@ -1,7 +1,7 @@
 package com.main.phone_store.controllers;
 
 import com.main.phone_store.entities.Product;
-import com.main.phone_store.services.ProductService;
+import com.main.phone_store.services.ProductService.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

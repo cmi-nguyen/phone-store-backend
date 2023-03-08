@@ -1,4 +1,4 @@
-package com.main.phone_store.services;
+package com.main.phone_store.services.UserService;
 
 import com.main.phone_store.entities.User;
 import org.springframework.stereotype.Service;

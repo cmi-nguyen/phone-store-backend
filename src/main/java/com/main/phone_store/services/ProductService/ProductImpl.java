@@ -1,4 +1,4 @@
-package com.main.phone_store.services;
+package com.main.phone_store.services.ProductService;
 
 import com.main.phone_store.entities.Product;
 import com.main.phone_store.repositories.ProductRepository;
@@ -10,7 +10,7 @@ import java.util.Objects;
 import java.util.Optional;
 
 @Service
-public class ProductImpl implements ProductService{
+public class ProductImpl implements ProductService {
     @Autowired private ProductRepository productRepository;
     @Override
     public Product saveProduct(Product product) {

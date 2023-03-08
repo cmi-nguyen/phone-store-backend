@@ -1,7 +1,8 @@
-package com.main.phone_store.services;
+package com.main.phone_store.services.UserService;
 
 import com.main.phone_store.entities.User;
 import com.main.phone_store.repositories.UserRepository;
+import com.main.phone_store.services.UserService.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +11,7 @@ import java.util.Objects;
 import java.util.Optional;
 
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
     // Save user

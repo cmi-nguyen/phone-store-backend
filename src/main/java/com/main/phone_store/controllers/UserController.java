@@ -1,7 +1,7 @@
 package com.main.phone_store.controllers;
 
 import com.main.phone_store.entities.User;
-import com.main.phone_store.services.UserService;
+import com.main.phone_store.services.UserService.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
