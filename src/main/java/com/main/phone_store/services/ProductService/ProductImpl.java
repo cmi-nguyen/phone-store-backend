@@ -30,9 +30,7 @@ public class ProductImpl implements ProductService {
     @Override
     public Product updateProduct(Product product, int product_id) {
         Product productDB = productRepository.findById(product_id).get();
-        if (Objects.nonNull(product.getProductID())){
-            productDB.setProductID(product.getProductID());
-        }
+
         if  (Objects.nonNull(product.getProductName()) && !"".equalsIgnoreCase(product.getProductName())){
             productDB.setProductName(product.getProductName());
         }
