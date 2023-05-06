@@ -19,6 +19,7 @@ public class UserController {
     }
 
     // Read user list mapping
+    @CrossOrigin
     @GetMapping("/user")
     public List<User> fetchUserList(){
         return userService.fetchUserList();
@@ -26,6 +27,7 @@ public class UserController {
     
     // Read user by id.
 
+    @CrossOrigin
     @GetMapping("/user/{id}")
     public Optional<User> getUserByID( @PathVariable("id") int id){
         return userService.getUserByID(id);
